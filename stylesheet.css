@@ -47,15 +47,21 @@ ol, ul {
     font-family: "Roboto-Medium";
 }
 
-
+a {
+    color: black;
+    text-decoration: none;
+  }
+a:hover {
+    background-color: rgb(231, 225, 225);
+}
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 16px;
     background-color: #65E4A3;
-    height: 10dvh;
-    max-width: 100dvw;
+    min-height: 10dvh;
+    max-width: 100%;
 
 }
 
@@ -72,6 +78,8 @@ ol, ul {
     font-family: "Roboto-Medium";
     font-weight: lighter;
     display: flex;
+    text-align: center;
+    align-items: center;
 }
 
 button {
@@ -79,7 +87,7 @@ button {
     border-color: #0A2640;
     border-radius: 16px;
     border-width: 2px;
-    width: min(12dvw, 200px);
+    width: min(16dvw, 200px);
     height: 3dvh;
 }
 .learnMoreButton {
@@ -88,33 +96,41 @@ button {
 }
 .sectionOne {
     background-color: #65E4A3;
-    height: 27dvh;
+    min-height: 27dvh;
     display: flex;
     justify-content: space-between;
 }
 
 .sectionOneLeft {
-    margin-left: 5dvw;
-    padding: 16px;
-}
+    margin-left: 4dvw;
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.sectionOneSubText {
+    margin-right: 20dvh;
+}
 .sectionOneHeroText {
     display: flex;
     flex-wrap: wrap;
-    width: 20ch;
+    width: 25ch;
+
+    padding-bottom: 15dvh;
 }
 
 .sectionOneInfo {
     width: 40ch;
-    margin-top: 6.5dvh;
-    margin-right: 5dvw;
+    margin-right: 10dvw;
     display: flex;
     flex-wrap: wrap;
+
 }
 
 .sectionTwo {
     background-color: #0A2640;
-    height: 55dvh;
+    min-height: 55dvh;
     width: 100%;
     color: white;
     display: flex;
@@ -126,15 +142,19 @@ button {
 
 }
 .sectionTwoHeroText {
-    width: 48ch;
+    max-width: 48ch;
     font-size: calc(0.8em + 1.5dvw);
+    text-align: center;
+
 }
 .sectionTwoSubText {
     margin-bottom: 2dvh;
 }
 .sectionTwoInfo {
     margin-top: 3dvh;
-    width: 80ch;
+    max-width: 80ch;
+    display: flex;
+    flex-wrap: wrap;
 }
 .sectionThree {
     background-color: white;
@@ -181,10 +201,7 @@ button {
 
     font-size: calc(1em + 0.7dvw);
 }
-.sectionFour {
-    background-color: #0A2640;
-    height: 70dvh;
-}
+
 
 
 
@@ -196,4 +213,36 @@ h1 {
 h2 {
     font-family: "Roboto-Light";
     font-size: calc(1em + 0.5dvw);
+}
+
+@media (max-width: 700px) {
+    .sectionOne {
+        flex-direction: column;
+        min-height: 30dvh;
+    }
+    .sectionOneInfo {
+        margin-right: auto;
+        margin-left: auto;
+        padding-bottom: 5dvh;
+
+    }
+    .sectionOneHeroText {
+        text-align: center;
+        margin-top: 0;
+        padding-top: 0;
+        padding-bottom: 2dvh;
+    }
+    .sectionOneLeft {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .sectionTwoInfo {
+        max-width: 40ch;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .sectionTwoSubText {
+        text-align: center;
+    }
 }
