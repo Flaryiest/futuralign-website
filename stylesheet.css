@@ -95,39 +95,43 @@ button {
     font-family: "Roboto-Medium";
 }
 .sectionOne {
-    background-color: #65E4A3;
-    min-height: 27dvh;
+    background-color: #ffffff;
+    min-height: 54dvh;
     display: flex;
     justify-content: space-between;
+
 }
 
 .sectionOneLeft {
     margin-left: 4dvw;
-
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-top: 10dvh;
 }
-.sectionOneSubText {
-    margin-right: 20dvh;
-}
+
 .sectionOneHeroText {
     display: flex;
     flex-wrap: wrap;
     width: 25ch;
-
-    padding-bottom: 15dvh;
+    padding-bottom: 5dvh;
 }
 
 .sectionOneInfo {
-    width: 40ch;
-    margin-right: 10dvw;
+    width: 44ch;
+    margin-right: 5dvw;
     display: flex;
     flex-wrap: wrap;
 
 }
 
+.sectionOneRight {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10dvh;
+    padding: 2dvh;
+}
 .sectionTwo {
     background-color: #0A2640;
     min-height: 55dvh;
@@ -135,7 +139,6 @@ button {
     color: white;
     display: flex;
     justify-content: center;
-
 }
 .sectionTwoContainer {
     padding-top: 8dvh;
@@ -145,6 +148,8 @@ button {
     max-width: 48ch;
     font-size: calc(0.8em + 1.5dvw);
     text-align: center;
+            margin-left: auto;
+        margin-right: auto
 
 }
 .sectionTwoSubText {
@@ -203,7 +208,9 @@ button {
 }
 
 
-
+img {
+    max-width: 80%;
+}
 
 h1 {
     font-size: calc(0.8em + 2dvw);
@@ -224,6 +231,7 @@ h2 {
         margin-right: auto;
         margin-left: auto;
         padding-bottom: 5dvh;
+        text-align: center;
 
     }
     .sectionOneHeroText {
@@ -237,6 +245,9 @@ h2 {
         margin-left: auto;
     }
 
+    .sectionOneRight {
+        margin-right: 0;
+    }
     .sectionTwoInfo {
         max-width: 40ch;
         margin-left: auto;
