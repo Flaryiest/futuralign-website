@@ -52,7 +52,7 @@ a {
     text-decoration: none;
   }
 a:hover {
-    background-color: rgb(231, 225, 225);
+    color: rgb(56, 56, 56);
 }
 .header {
     display: flex;
@@ -118,10 +118,12 @@ button {
 }
 
 .sectionOneInfo {
-    width: 44ch;
+    width: 48ch;
     margin-right: 5dvw;
     display: flex;
     flex-wrap: wrap;
+    letter-spacing: 0.5px;
+    line-height: 1.4;
 
 }
 
@@ -160,6 +162,8 @@ button {
     max-width: 80ch;
     display: flex;
     flex-wrap: wrap;
+    letter-spacing: 0.5px;
+    line-height: 1.4
 }
 .sectionThree {
     background-color: white;
@@ -232,6 +236,7 @@ h2 {
         margin-left: auto;
         padding-bottom: 5dvh;
         text-align: center;
+        width: 36ch;
 
     }
     .sectionOneHeroText {

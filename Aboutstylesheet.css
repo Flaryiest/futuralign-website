@@ -52,7 +52,7 @@ a {
     text-decoration: none;
   }
 a:hover {
-    background-color: rgb(231, 225, 225);
+    color: rgb(56, 56, 56);
 }
 .header {
     display: flex;
@@ -71,7 +71,7 @@ body {
     display: flex;
     flex-direction: column;
     flex: 1;
-    overflow-y: hidden;
+
 
 }
 .headerLeft {
@@ -110,9 +110,12 @@ body {
 .sectionOneInfo {
     font-family: "Roboto-Light";
     text-wrap: wrap;
-    line-height: 1.65;
+    line-height: 1.75;
     max-width: 60ch;
-    font-size: 32px;
+    font-size: calc(0.75em + 1dvw);
+    margin-top: 5dvh;
+    margin-bottom: 5dvh;
+    text-align: center;
 }
 
 .sectionTwo {
@@ -121,7 +124,8 @@ body {
     padding-top: 5dvh;
     padding-left: 5dvw;
     padding-right: 5dvw;
-    height: 40dvh;
+    padding-bottom: 5dvh;
+
 }
 
 .sectionTwoCard {
@@ -142,16 +146,14 @@ body {
     font-family: "Roboto-Light";
     margin-top: 2dvh;
     font-size: calc(0.8em + 0.75dvw);
-    line-height: 1.25;
+
+    letter-spacing: 0.5px;
+    line-height: 1.4
 }
 
-.sectionThree {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
-@media (max-width: 700px) {
+
+@media (max-width: 1000px) {
     .sectionTwo {
         flex-direction: column;
         gap: 5dvh;

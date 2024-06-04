@@ -52,7 +52,7 @@ a {
     text-decoration: none;
   }
 a:hover {
-    background-color: rgb(231, 225, 225);
+    color: rgb(56, 56, 56);
 }
 .header {
     display: flex;
@@ -80,4 +80,75 @@ a:hover {
     display: flex;
     text-align: center;
     align-items: center;
+}
+
+
+.content {
+    display: flex;
+    margin-top: 2.5dvh;
+}
+
+.sectionOne {
+    display: flex;
+    flex-direction: column;
+    margin: 10dvh;
+    margin-top: 2dvh;
+
+}
+
+.heroText {
+    font-size: calc(2em + 0.5dvw);
+}
+
+.info {
+    max-width: 48ch;
+    min-width: 24ch;
+    line-height: 1.25;
+    font-family: "Roboto-Light";
+    font-size: calc(1em + 0.5dvw);
+    letter-spacing: 0.5px;
+    line-height: 1.4;
+    margin-top: 2dvh;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5dvh;
+}
+
+img {
+    max-width: 30%;
+    max-height: 50%;
+}
+
+
+
+@media (max-width: 1600px) {
+    .content {
+        flex-direction: column;
+    }
+    .images {
+        align-self: center;
+        margin: 10dvh;
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 700px) {
+    .info {
+        text-align: center;
+    }
+    .sectionOne {
+        align-items: center;
+    }
+    .images {
+        display: flex;
+        flex-direction: column;
+        gap: 2dvh;
+    }
+    img {
+        max-width: 100%;
+    }
 }
