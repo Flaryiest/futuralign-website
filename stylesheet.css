@@ -1,264 +1,407 @@
 @font-face {
-    font-family: "Roboto-Medium";
-    src: url("./Roboto-Medium.ttf") format("truetype");
+  font-family: "Roboto-Medium";
+  src: url("./Roboto-Medium.ttf") format("truetype");
 }
 @font-face {
-    font-family: "Roboto-Light";
-    src: url("./Roboto-Light.ttf") format("truetype");
+  font-family: "Roboto-Light";
+  src: url("./Roboto-Light.ttf") format("truetype");
 }
+
+:root {
+  font-family: "Inter", sans-serif;
+}
+@supports (font-variation-settings: normal) {
+  :root {
+    font-family: "Inter var", sans-serif;
+  }
+}
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-	line-height: 1;
-    overflow-x: hidden;
+  line-height: 1.4;
+  overflow-x: hidden;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
 
 :root {
-    font-family: "Roboto-Medium";
+  font-family: "Roboto-Medium";
 }
 
 a {
-    color: black;
-    text-decoration: none;
-  }
-a:hover {
-    color: rgb(56, 56, 56);
+  text-decoration: none;
+  color: black;
 }
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 16px;
-    background-color: #65E4A3;
-    min-height: 10dvh;
-    max-width: 100%;
 
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fffff0;
+  min-height: 5dvh;
+  max-width: 100%;
+  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.25);
+  position: relative;
+  z-index: 10;
 }
 
 .headerLeft {
-    margin: min(16px, 1.3vw);
-    margin-left: 5dvw;
-    font-size: 2em;
-    font-weight: 500;
+  margin-left: 5dvw;
+  font-size: 3em;
+  display: flex;
+  align-items: center;
+}
+
+li {
+  font-size: 1.5em;
+  height: 100%;
 }
 
 .headerRight {
-    margin-right: 10dvw;
-    gap: calc(12px + 2dvw);
-    font-family: "Roboto-Medium";
-    font-weight: lighter;
-    display: flex;
-    text-align: center;
-    align-items: center;
+  margin-right: 10dvw;
+  gap: calc(12px + 2dvw);
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+
+.headerImage {
+  max-width: 120px;
 }
 
 button {
-    background-color: #65E4A3;
-    border-color: #0A2640;
-    border-radius: 16px;
-    border-width: 2px;
-    width: min(16dvw, 200px);
-    height: 3dvh;
+  background-color: #65e4a3;
+  border-color: #0a2640;
+  border-radius: 16px;
+  border-width: 2px;
+  width: min(16dvw, 200px);
+  height: 3dvh;
 }
 .learnMoreButton {
-    margin-left: 40ch;
-    font-family: "Roboto-Medium";
+  margin-left: 40ch;
+  font-family: "Roboto-Medium";
 }
 .sectionOne {
-    background-color: #ffffff;
-    min-height: 54dvh;
-    display: flex;
-    justify-content: space-between;
-
+  background-color: #ffffff;
+  min-height: 54dvh;
+  display: flex;
+  justify-content: space-between;
 }
 
 .sectionOneLeft {
-    margin-left: 4dvw;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 10dvh;
+  margin-left: 4dvw;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10dvh;
 }
 
 .sectionOneHeroText {
-    display: flex;
-    flex-wrap: wrap;
-    width: 25ch;
-    padding-bottom: 5dvh;
+  display: flex;
+  flex-wrap: wrap;
+  width: 727.5;
+  padding-bottom: 5dvh;
 }
 
 .sectionOneInfo {
-    width: 48ch;
-    margin-right: 5dvw;
-    display: flex;
-    flex-wrap: wrap;
-    letter-spacing: 0.5px;
-    line-height: 1.4;
-
+  width: 44ch;
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 2dvh;
 }
 
 .sectionOneRight {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 10dvh;
-    padding: 2dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2dvh;
+  padding-bottom: 2dvh;
 }
+
 .sectionTwo {
-    background-color: #0A2640;
-    min-height: 55dvh;
-    width: 100%;
-    color: white;
-    display: flex;
-    justify-content: center;
+  background-color: #0a2640;
+  min-height: 55dvh;
+  width: 100%;
+  color: white;
+  display: flex;
+  justify-content: center;
 }
 .sectionTwoContainer {
-    padding-top: 8dvh;
-
+  padding-top: 8dvh;
 }
 .sectionTwoHeroText {
-    max-width: 48ch;
-    font-size: calc(0.8em + 1.5dvw);
-    text-align: center;
-            margin-left: auto;
-        margin-right: auto
-
+  max-width: 48ch;
+  font-size: calc(0.8em + 1.5dvw);
 }
 .sectionTwoSubText {
-    margin-bottom: 2dvh;
+  margin-bottom: 2dvh;
 }
 .sectionTwoInfo {
-    margin-top: 3dvh;
-    max-width: 80ch;
-    display: flex;
-    flex-wrap: wrap;
-    letter-spacing: 0.5px;
-    line-height: 1.4
+  margin-top: 3dvh;
+  max-width: 80ch;
+  display: flex;
+  flex-wrap: wrap;
 }
 .sectionThree {
-    background-color: white;
-    height: 50dvh;
-
+  background-color: white;
+  height: 55dvh;
+  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.25);
+  position: relative;
+  z-index: 10;
 }
 
 .sectionThreeTop {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .sectionThreeHeroText {
-    margin-top: 2dvh;
-    font-family: "Roboto-light";
+  margin-top: 2dvh;
+  font-family: "Roboto-light";
 }
 .sectionThreeSubText {
-    margin-top: 8dvh;
-    margin-right: auto;
-    margin-left: auto;
+  margin-top: 8dvh;
+  margin-right: auto;
+  margin-left: auto;
 }
 .sectionThreeBottom {
-    margin-left: 3dvw;
-    margin-top: 10dvh;
-    display: flex;
-    justify-content: center;
-    gap: 4dvw;
-    
+  margin-top: 10dvh;
+  display: flex;
+  justify-content: center;
+  gap: 20dvw;
 }
 .goal {
-
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 20dvw;
+  align-items: center;
 }
 
 .goalHeroText {
-    font-size: calc(1.5em + 3dvw);
+  font-size: calc(1.5em + 3dvw);
 }
 
 .goalSubText {
-
-    font-size: calc(1em + 0.7dvw);
+  font-size: calc(1em + 0.7dvw);
+  text-align: center;
 }
 
-
 img {
-    max-width: 80%;
+  max-width: 80%;
 }
 
 h1 {
-    font-size: calc(0.8em + 2dvw);
-    line-height: calc(1em + 0.5dvw);
+  font-size: calc(0.8em + 2dvw);
+  line-height: calc(1em + 0.5dvw);
 }
 
 h2 {
-    font-family: "Roboto-Light";
-    font-size: calc(1em + 0.5dvw);
+  font-family: "Roboto-Light";
+  font-size: calc(1em + 0.5dvw);
 }
 
-@media (max-width: 700px) {
-    .sectionOne {
-        flex-direction: column;
-        min-height: 30dvh;
-    }
-    .sectionOneInfo {
-        margin-right: auto;
-        margin-left: auto;
-        padding-bottom: 5dvh;
-        text-align: center;
-        width: 36ch;
+a {
+  position: relative;
+  user-select: none;
+  font-size: 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin: 0 20px;
+}
 
-    }
-    .sectionOneHeroText {
-        text-align: center;
-        margin-top: 0;
-        padding-top: 0;
-        padding-bottom: 2dvh;
-    }
-    .sectionOneLeft {
-        margin-right: auto;
-        margin-left: auto;
-    }
+a:before {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0px;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  box-shadow: 0.5px 0.5px 0.5px #000;
+  transform: scaleX(0);
+  transition: 400ms cubic-bezier(0.7, -0.6, 0.3, 1.2) transform;
+}
 
-    .sectionOneRight {
-        margin-right: 0;
-    }
-    .sectionTwoInfo {
-        max-width: 40ch;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .sectionTwoSubText {
-        text-align: center;
-    }
+a:hover {
+  text-shadow: 1px 1px 1px #000;
+}
+
+a:hover:before {
+  transform: scaleX(1);
+}
+
+.footer {
+  background-color: #fffff0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10dvh;
+  gap: 3dvw;
+}
+.footerText {
+  font-size: 1.5em;
+}
+
+@media (max-width: 1000px) {
+  .goal {
+    width: 100%;
+  }
+  .header {
+    flex-direction: column;
+  }
+  .headerRight {
+    margin-right: 0;
+    margin-bottom: 5dvh;
+    gap: 4px;
+  }
+  .headerLeft {
+    margin-left: 0;
+  }
+  .sectionOne {
+    flex-direction: column;
+    min-height: 30dvh;
+  }
+  .sectionOneInfo {
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 5dvh;
+    text-align: center;
+  }
+  .sectionOneHeroText {
+    text-align: center;
+    margin-top: 0;
+    padding-top: 0;
+    padding-bottom: 2dvh;
+  }
+  .sectionOneLeft {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .sectionOneRight {
+    margin-right: 0;
+  }
+  .sectionTwoInfo {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  .sectionTwoHeroText {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  .sectionTwoSubText {
+    text-align: center;
+  }
+  li {
+    font-size: 1em;
+  }
 }
