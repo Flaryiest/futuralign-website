@@ -168,7 +168,7 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #fffff0;
+  background-color: #F0F8FF
   min-height: 10dvh;
   max-width: 100%;
   box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.25);
@@ -190,6 +190,12 @@ li {
 
 ul {
   list-style: none;
+}
+
+.summerEvent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .headerRight {
