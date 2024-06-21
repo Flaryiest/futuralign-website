@@ -193,9 +193,11 @@ ul {
 }
 
 .summerEvent {
+  margin-top: 2dvh;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 
 .headerRight {
@@ -245,6 +247,34 @@ a:hover:before {
   transform: scaleX(1);
 }
 
+h1 {
+  font-size: calc(0.8em + 2dvw);
+  line-height: calc(1em + 0.5dvw);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 5dvw;
+  margin-top: 2dvh;
+}
+.containerTwo {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5dvh;
+}
+
+.poster {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.cont {
+  margin-top: 5dvh;
+}
+.align {
+  text-align: center;
+}
 @media (max-width: 1600px) {
   .content {
     flex-direction: column;
@@ -284,5 +314,13 @@ a:hover:before {
   }
   .headerLeft {
     margin-left: 0;
+  }
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .containerTwo {
+    flex-direction: column;
+    align-items: center;
   }
 }
