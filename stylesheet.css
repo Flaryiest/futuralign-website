@@ -401,6 +401,18 @@ h2 {
   width: 200px;
   margin-top: 2dvh;
 }
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  color: white;
+  height: 10dvh;
+  flex-wrap: wrap;
+}
+.banner > a {
+  color: white;
+}
 
 @media (max-width: 1000px) {
   .goal {

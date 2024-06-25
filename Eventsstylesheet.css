@@ -217,7 +217,7 @@ a {
   text-decoration: none;
   color: black;
 }
-a {
+.hoverEffect {
   position: relative;
   user-select: none;
   font-size: 20px;
@@ -226,7 +226,7 @@ a {
   margin: 0 20px;
 }
 
-a:before {
+.hoverEffect:before {
   content: "";
   position: absolute;
   bottom: -10px;
@@ -239,11 +239,11 @@ a:before {
   transition: 400ms cubic-bezier(0.7, -0.6, 0.3, 1.2) transform;
 }
 
-a:hover {
+.hoverEffect:hover {
   text-shadow: 1px 1px 1px #000;
 }
 
-a:hover:before {
+.hoverEffect:hover:before {
   transform: scaleX(1);
 }
 
@@ -275,6 +275,22 @@ h1 {
 .align {
   text-align: center;
 }
+
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  color: white;
+  height: 10dvh;
+  flex-wrap: wrap;
+  font-family: "Roboto-Light";
+  font-size: calc(1em + 0.5dvw);
+}
+.banner > a {
+  color: white;
+}
+
 @media (max-width: 1600px) {
   .content {
     flex-direction: column;
