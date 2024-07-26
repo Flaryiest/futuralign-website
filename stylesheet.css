@@ -414,6 +414,10 @@ h2 {
   color: white;
 }
 
+.info {
+  margin-bottom: 5dvh;
+}
+
 @media (max-width: 1000px) {
   .goal {
     width: 100%;
